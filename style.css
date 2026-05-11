@@ -164,6 +164,7 @@ body.dark{
 }
 
 .hero-content p{
+  width: 20px;
   margin:25px 0;
   line-height:1.8;
 }
