@@ -24,8 +24,6 @@ body.dark{
   color:white;
 }
 
-/* HEADER WRAPPER */
-
 .header-wrapper{
   width:100%;
   position:sticky;
@@ -33,19 +31,14 @@ body.dark{
   z-index:1000;
 }
 
-/* TOP HEADER */
-
 .top-header{
   background:#355e3b;
   color:white;
   padding:12px 5%;
-
   display:flex;
   justify-content:space-between;
   align-items:center;
 }
-
-/* SOCIAL ICONS */
 
 .top-right{
   display:flex;
@@ -62,21 +55,15 @@ body.dark{
   opacity:0.7;
 }
 
-/* MAIN HEADER */
-
 .main-header{
   background:white;
 
   display:flex;
   justify-content:space-between;
   align-items:center;
-
   padding:18px 5%;
-
   box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
-
-/* LOGO */
 
 .logo{
   display:flex;
@@ -87,12 +74,9 @@ body.dark{
 .logo-icon{
   width:45px;
   height:45px;
-
   border-radius:50%;
-
   background:#355e3b;
   color:white;
-
   display:flex;
   justify-content:center;
   align-items:center;
@@ -102,8 +86,6 @@ body.dark{
   color:#355e3b;
   font-size:26px;
 }
-
-/* NAVIGATION */
 
 .nav-menu ul{
   display:flex;
@@ -122,8 +104,6 @@ body.dark{
   color:#355e3b;
 }
 
-/* BUTTONS */
-
 .header-buttons{
   display:flex;
   gap:15px;
@@ -137,23 +117,17 @@ body.dark{
   transition:0.3s;
 }
 
-/* PRIMARY BUTTON */
-
 .primary-btn{
   background:#355e3b;
   color:white;
   border:none;
 }
 
-/* SECONDARY BUTTON */
-
 .secondary-btn{
   background:transparent;
   border:2px solid #355e3b;
   color:#355e3b;
 }
-
-/* RESPONSIVE */
 
 @media(max-width:992px){
 
@@ -203,72 +177,4 @@ body.dark{
   width:100%;
   border-radius:20px;
   object-fit:cover;
-}
-
-.features{
-  padding:80px 5%;
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:50px;
-}
-
-.feature-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:30px;
-}
-
-.feature-card{
-  padding:40px;
-  text-align:center;
-  background:var(--light);
-  border-radius:16px;
-}
-
-body.dark .feature-card{
-  background:#2b2b2b;
-}
-
-.feature-card i{
-  font-size:40px;
-  color:var(--primary);
-}
-
-.pricing{
-  padding:80px 5%;
-}
-
-.pricing-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:30px;
-}
-
-.price-card{
-  background:var(--light);
-  padding:40px;
-  border-radius:20px;
-  text-align:center;
-  position:relative;
-}
-
-body.dark .price-card{
-  background:#2b2b2b;
-}
-
-.popular{
-  border:3px solid var(--primary);
-}
-
-.badge{
-  position:absolute;
-  top:15px;
-  right:15px;
-  background:var(--primary);
-  color:white;
-  padding:6px 14px;
-  border-radius:20px;
-  font-size:12px;
 }
