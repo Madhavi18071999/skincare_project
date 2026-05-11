@@ -5,6 +5,9 @@
   font-family:Arial, sans-serif;
 }
 
+.header {
+    display: flex;
+}
 .top-header{
   background:#2f5233;
   color:white;
