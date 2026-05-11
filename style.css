@@ -56,6 +56,7 @@ body {
 
 .logo {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 10px;
   font-weight: 700;
@@ -173,7 +174,7 @@ body {
 .hero-image img {
   width: 100%;
   border-radius: 18px;
-  box-shadow: var(--shadow);
+  object-fit: cover;
 }
 
 .grid-3 {
