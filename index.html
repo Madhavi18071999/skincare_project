@@ -1,96 +1,248 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Organic Skin Care</title>
-  <link rel="stylesheet" href="style.css">
-   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organic Skin Care & Soap Crafters</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-<header class="header-wrapper">
-  <div class="top-header">
-    <div class="top-left">
-      <p>Organic Handmade Soap & Skin Care</p>
-    </div>
-    <div class="top-right">
-      <a href="#">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="#">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-      <a href="#">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-    </div>
-  </div>
-  <div class="main-header">
+<!-- =========================
+HEADER 1 (UTILITY BAR)
+========================= -->
+<header class="top-header">
+  <div class="container header-flex">
+
     <div class="logo">
-      <div class="logo-icon">
-        <i class="fa-solid fa-leaf"></i>
-      </div>
-      <h2>PureGlow</h2>
+      <div class="logo-box">O</div>
+      <span>Organic Care</span>
     </div>
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Dashboard</a></li>
-        </ul>
-    </nav>
-    <div class="header-buttons">
-      <button class="btn secondary-btn">
-        Sign In
+
+    <div class="header-icons">
+      <button class="icon-btn" id="rtlBtn">
+        <i class="fa-solid fa-language"></i>
       </button>
-      <button class="btn primary-btn">
-        Shop Now
+
+      <button class="icon-btn" id="themeBtn">
+        <i class="fa-solid fa-moon"></i>
       </button>
     </div>
+
   </div>
 </header>
 
+
+<!-- =========================
+HEADER 2 (NAVIGATION)
+========================= -->
+<nav class="main-nav">
+  <div class="container nav-flex">
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Soaps</a></li>
+      <li><a href="#">Skin Care</a></li>
+      <li><a href="#">Ingredients</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Dashboard</a></li>
+    </ul>
+
+    <!-- ONLY 2 CTAs -->
+    <div class="nav-cta">
+      <a href="#" class="btn secondary">Login</a>
+      <a href="#" class="btn primary">Shop Now</a>
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- =========================
+HERO SECTION (ORGANIC BRAND)
+========================= -->
 <section class="hero">
+  <div class="container hero-grid">
 
-  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Pure Organic Skin Care & Handmade Soaps</h1>
 
-    <h1>
-      Natural Skin Care Crafted With Nature
-    </h1>
+      <p>
+        Experience nature’s touch with chemical-free, handcrafted soaps and skin care products made from natural herbs, oils, and essential nutrients.
+      </p>
 
-    <p>
-      Premium organic soaps and skincare products
-      made with pure botanical ingredients.
-    </p>
+      <div class="hero-buttons">
+        <a class="btn primary">Explore Products</a>
+        <a class="btn secondary">Learn More</a>
+      </div>
+    </div>
 
-    <div class="hero-buttons">
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd" alt="Organic Skin Care">
+    </div>
 
-      <button class="btn primary-btn">
-        Shop Now
-      </button>
+  </div>
+</section>
 
-      <button class="btn secondary-btn">
-        Learn More
-      </button>
+
+<!-- =========================
+FEATURES (BRAND TRUST)
+========================= -->
+<section class="features">
+  <div class="container grid-3">
+
+    <div class="card">
+      <h3>100% Natural Ingredients</h3>
+      <p>No chemicals, only plant-based organic extracts.</p>
+    </div>
+
+    <div class="card">
+      <h3>Handmade Soaps</h3>
+      <p>Carefully crafted soaps for sensitive and glowing skin.</p>
+    </div>
+
+    <div class="card">
+      <h3>Eco Friendly</h3>
+      <p>Sustainable packaging and environmentally safe production.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+PRODUCT SHOWCASE
+========================= -->
+<section class="products">
+  <div class="container grid-3">
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1616671276441-2f2c2c4f9c4b" alt="">
+      <h3>Aloe Vera Soap</h3>
+      <p>Soothing and hydrating natural soap.</p>
+      <button class="btn secondary">View</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd" alt="">
+      <h3>Herbal Face Cream</h3>
+      <p>Glowing skin with organic herbal blend.</p>
+      <button class="btn secondary">View</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6" alt="">
+      <h3>Coconut Oil Soap</h3>
+      <p>Deep cleansing and moisturizing soap bar.</p>
+      <button class="btn secondary">View</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+HOME 2 PREMIUM STORY SECTION
+========================= -->
+<section class="premium">
+  <div class="container premium-grid">
+
+    <div class="premium-img">
+      <img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e" alt="">
+    </div>
+
+    <div class="premium-text">
+      <h2>Why Choose Organic Care?</h2>
+      <p>
+        We believe in purity, sustainability, and skin wellness through natural formulations.
+      </p>
+
+      <ul>
+        <li>✔ No Parabens & Sulfates</li>
+        <li>✔ Dermatologically Safe</li>
+        <li>✔ Cruelty Free Production</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+PRICING (PRODUCT PACKAGES)
+========================= -->
+<section class="pricing">
+  <div class="container grid-3">
+
+    <div class="price-card">
+      <h3>Starter Kit</h3>
+      <p>$15</p>
+      <button class="btn secondary">Buy</button>
+    </div>
+
+    <div class="price-card popular">
+      <h3>Herbal Bundle</h3>
+      <p>$35</p>
+      <button class="btn primary">Buy Now</button>
+    </div>
+
+    <div class="price-card">
+      <h3>Luxury Pack</h3>
+      <p>$60</p>
+      <button class="btn secondary">Buy</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+DASHBOARD (ORDER TRACKING)
+========================= -->
+<section class="dashboard">
+  <div class="container dashboard-layout">
+
+    <aside class="sidebar">
+      <h3>Customer Panel</h3>
+
+      <a href="#">Orders</a>
+      <a href="#">Wishlist</a>
+      <a href="#">Skin Profile</a>
+      <a href="#">Rewards</a>
+      <a href="#">Logout</a>
+    </aside>
+
+    <div class="dashboard-main">
+
+      <h2>Welcome Back 🌿</h2>
+      <p>Your organic journey continues with natural care products.</p>
+
+      <div class="metrics">
+
+        <div class="metric-box">
+          <h4>Total Orders</h4>
+          <p>24</p>
+        </div>
+
+        <div class="metric-box">
+          <h4>Saved Products</h4>
+          <p>8</p>
+        </div>
+
+        <div class="metric-box">
+          <h4>Loyalty Points</h4>
+          <p>1,200</p>
+        </div>
+
+      </div>
 
     </div>
 
   </div>
-
-  <div class="hero-image">
-    <img
-      src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"
-      alt="Organic Skincare"
-    >
-  </div>
-
 </section>
+
 </body>
 </html>
