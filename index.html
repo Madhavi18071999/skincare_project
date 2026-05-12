@@ -11,61 +11,68 @@
 </head>
 
 <body>
-  <header class="top-header">
-    <div class="container top-header-wrapper">
+  <header class="header">
       <div class="logo">
         <div class="logo-box">O</div>
         <h2>Organic Care</h2>
       </div>
-      <div class="top-icons">
-        <button class="icon-btn">
-          <i class="fa-solid fa-language"></i>
-        </button>
-        <button class="icon-btn">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-      </div>
     </div>
+    <nav class="navbar">
+    <div class="nav-dropdown">
+      <a href="#" class ="nav-home">
+        " Home "
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" aria-hidden="true" class="lucide lucide-chevron-down">
+        <path d="m6 9 6 6 6-6"></path>
+      </svg>
+      </a>
+      <div class="dropdown-menu">
+        <a href="/">Home-1</a>
+        <a href="/home2">Home-2</a>
+      </div>  
+    </div>
+    <a href="/about">About</a>
+    <a href="#">Services</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+    <a href="#">Dashboard</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn" id="theme-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="moon" aria-hidden="true" class="lucide lucide-moon">
+      <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path>
+    </svg> 
+    </button>
+    <button class="rtl-btn">RTL</button>
+    <button class="primary-btn">Login</button>
+  </div>
   </header>
 
-  <nav class="navbar">
-    <div class="container navbar-wrapper">
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Skin Care</a></li>
-        <li><a href="#">Handmade Soaps</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Dashboard</a></li>
-      </ul>
-      <div class="nav-buttons">
-        <a href="#" class="btn btn-secondary">Login</a>
-        <a href="#" class="btn btn-primary">Shop Now</a>
-      </div>
-    </div>
-  </nav>
-
   <section class="hero">
-    <div class="container hero-wrapper">
       <div class="hero-content">
-        <span class="hero-tag">
-          Pure • Organic • Handmade
-        </span>
-        <h1>
-          Organic Skin Care &
-          Handmade Soap Crafters
-        </h1>
-        <p>
-          Discover natural soaps and skin care products crafted with
-          organic ingredients, essential oils, and eco-friendly methods.
-        </p>
+        <span class="hero-tag">Pure • Organic • Handmade</span>
+        <h1>Organic Skin Care & Handmade Soap Crafters</h1>
+        <p>Discover natural soaps and skin care products crafted withorganic ingredients, essential oils, and eco-friendly methods.</p>
         <div class="hero-buttons">
-          <a href="#" class="btn btn-primary">
+          <button class="primary-btn">
             Explore Products
-          </a>
-          <a href="#" class="btn btn-secondary">
+          </button>
+          <button class="secondary-btn">
             Learn More
-          </a>
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-box">
+            <h3>500+</h3>
+            <p>Products Sold</p>
+          </div>
+          <div class="stat-box">
+            <h3>200+</h3>
+            <p>Happy Customers</p>
+          </div>
+          <div class="stat-box">
+            <h3>10+</h3>
+            <p>Years of Experience</p>
+        </div>
         </div>
       </div>
       <div class="hero-image">
@@ -73,7 +80,6 @@
           src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?q=80&w=1200&auto=format&fit=crop"
           alt="Organic Skin Care">
       </div>
-    </div>
   </section>
 
   <section class="features">
