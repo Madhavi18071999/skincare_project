@@ -101,7 +101,7 @@ body.dark-mode .header {
 .logo h2 {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
-  color: var(--text-color);
+  color: var(--primary-color);
   margin-bottom: 10px;
   max-width: 100px;  
 }
@@ -214,23 +214,19 @@ body.dark-mode .header {
   color: var(--primary-color);
 }
 
-.white-btn {
-  background: white;
-  color: var(--black);
-}
-
 .icon-btn {
   width: 46px;
   height: 46px;
   border-radius: 50%;
   border: 1px solid var(--border-color);
-  background: transparent;
+  background: var(--bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   color: var(--text-color);
-  transition: var(--transition);
+  transition: 0.3s;
+  font-size: 18px;
 }
 
 .icon-btn:hover {
@@ -238,12 +234,16 @@ body.dark-mode .header {
   color: var(--primary-color);
 }
 .rtl-btn{
+  width: 45px;
+  height: 45px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
    padding: 14px 20px;
-  border-radius: 999px;
+  border-radius: 12px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: var(--transition);
+  transition: 0.3s;
 }
 
 .hero {
@@ -329,7 +329,7 @@ body.dark-mode .header {
 
 .about-section{
   padding: 80px 10%;
-  background: #f7f5f0;
+  background: white;
 }
 
 .about-container{
@@ -347,6 +347,7 @@ body.dark-mode .header {
 
 .about-image img{
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   border: 3px solid #355e3b;
 }
@@ -395,7 +396,7 @@ body.dark-mode .header {
 
 .services-section{
   padding: 80px 10%;
-  background: #f7f5f0;
+  background: white;
 }
 
 .services-header{
@@ -474,7 +475,7 @@ body.dark-mode .header {
 
 .products-section{
   padding: 80px 10%;
-  background: #f7f5f0;
+  background: white;
 }
 
 .products-header{
@@ -517,7 +518,7 @@ body.dark-mode .header {
 
 .product-card img{
   width: 100%;
-  height: 220px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -557,7 +558,7 @@ body.dark-mode .header {
 
 .why-choose-section{
   padding: 80px 10%;
-  background: #f7f5f0;
+  background: white;
 }
 
 .why-header{
@@ -627,8 +628,8 @@ body.dark-mode .header {
 }
 
 .footer-section{
-  background: #355e3b;   
-  color: #f7f5f0;       
+  background: white;   
+  color: var(--text-color);       
   padding: 60px 10% 20px;
   font-family: Arial, sans-serif;
   border: 1px solid var(--border-color);
@@ -653,16 +654,29 @@ body.dark-mode .header {
 }
 
 .footer-bottom{
-  text-align: center;
+  text-align: left;
   margin-top: 40px;
   padding-top: 15px;
-  border-top: 1px solid #f7f5f0;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-bottom-1{
+  text-align: right;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
 }
 
 .footer-bottom h3{
   font-size: 16px;
   font-weight: normal;
-  color: #f7f5f0;
+  color: var(--text-color);
+}
+
+.footer-bottom-1 h3{
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--text-color);
 }
 
 @media(max-width: 768px){
