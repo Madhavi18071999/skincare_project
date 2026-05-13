@@ -350,7 +350,7 @@ body.dark-mode .header {
 }
 
 .about-image img {
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
 }
 
@@ -387,7 +387,7 @@ body.dark-mode .header {
 
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
     .about-content h2 {
