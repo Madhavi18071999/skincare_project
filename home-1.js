@@ -9,9 +9,9 @@ function toggleTheme(){
     }
  
     const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+    const navLinks = document.querySelector(".nav-dropdown");
     const navbar = document.querySelector(".navbar");
-    const navAnchors = document.querySelectorAll(".nav-links a");
+    const navAnchors = document.querySelectorAll(".nav-dropdown a");
  
     menuToggle.addEventListener("click", () => {
       navLinks.classList.toggle("show");
