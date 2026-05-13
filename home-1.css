@@ -652,7 +652,7 @@ body.dark-mode .header {
 }
 
 .footer-bottom {
-    text-align: center;
+    text-align: left;
     border-top: 1px solid #f5f5dc;
     margin-top: 20px;
     padding-top: 10px;
