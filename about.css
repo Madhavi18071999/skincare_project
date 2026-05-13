@@ -182,76 +182,59 @@ body.dark-mode .header {
   margin-left: 14px;
 }
 
-.primary-btn,
-.secondary-btn {
-  padding: 14px 28px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition);
-}
+.icon-btn{
+      width:44px;
+      height:44px;
+      border:none;
+      border-radius:12px;
+      background:var(--soft);
+      color:var(--text);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      transition:.25s ease;
+      border:1px solid var(--border);
+    }
 
-.primary-btn {
-  background: var(--primary-color);
-  color: white;
-  border: none;
-}
+    .icon-btn:hover{
+      transform:translateY(-2px);
+      background:var(--secondary);
+    }
 
-.primary-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px var(--primary-color);
-}
+    .btn{
+      height:44px;
+      padding:0 20px;
+      border-radius:12px;
+      border:none;
+      cursor:pointer;
+      font-weight:600;
+      transition:.25s ease;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      white-space:nowrap;
+    }
 
-.secondary-btn {
-  background: transparent;
-  border: 1px solid var(--border-color);
-  color: var(--text-color);
-}
+    .btn-secondary{
+      background:var(--secondary);
+      color:var(--text);
+      border:1px solid var(--border);
+    }
 
-.secondary-btn:hover {
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-}
+    .btn-primary{
+      background:var(--primary);
+      color:white;
+    }
 
-.theme-btn {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  border: 1px solid var(--border-color);
-  background: var(--bg-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: var(--text-color);
-  transition: 0.3s;
-  font-size: 18px;
-}
+    .btn-primary:hover{
+      background:var(--primary-hover);
+    }
 
-.theme-btn:hover,
-.rtl-btn:hover {
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-  transform: translateY(-3px);
-}
+    .btn:hover{
+      transform:translateY(-2px);
+    }
 
-.rtl-btn {
-  padding: 10px 18px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.rtl-btn,
-.theme-btn{
-  border: none;
-  background: white;
-  color: var(--black);
-  cursor: pointer;
-  backdrop-filter: blur(8px);
-  transition: 0.35s ease;
-}
 
 .hero {
     background: #355e3b;  
@@ -262,7 +245,7 @@ body.dark-mode .header {
     text-align: center;
     padding: 20px;
     color: #f5f5dc;
-    background-image: url(images/about-img.jpg);
+    background-image: url(images/about-img2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -350,7 +333,8 @@ body.dark-mode .header {
 }
 
 .about-image img {
-    width: 50%;
+    width: 100%;
+    height: 50%;
     border-radius: 10px;
 }
 
@@ -406,9 +390,10 @@ body.dark-mode .header {
 .story-container {
     max-width: 1200px;
     margin: auto;
-
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 50px;
     flex-wrap: wrap;
 }
@@ -456,7 +441,7 @@ body.dark-mode .header {
 }
 
 .team {
-    background: #f5f5dc;   /* Light Cream */
+    background: #f5f5dc;  
     padding: 80px 20px;
 }
 
@@ -529,8 +514,8 @@ body.dark-mode .header {
 }
 
 .footer {
-    background: #355e3b;
-    color: #f5f5dc;
+    background: var(--secondary-color);
+    color: black;
     padding: 50px 20px 20px;
 }
 
@@ -542,8 +527,12 @@ body.dark-mode .header {
     margin: auto;
 }
 
-.footer-box h2,
-.footer-box h3 {
+.footer-box h2 {
+    color: var(--primary-color);
+}
+
+.footer-box h3,
+.footer-box h2 {
     margin-bottom: 15px;
 }
 
@@ -558,7 +547,7 @@ body.dark-mode .header {
 
 .footer-bottom {
     margin-top: 30px;
-    border-top: 1px solid #f5f5dc;
+    border-top: 1px solid var(--light-text);
     padding-top: 15px;
     text-align: right;
     display: flex;
@@ -578,7 +567,7 @@ body.dark-mode .header {
 }
 
 .footer-links a {
-    color: #f5f5dc;
+    color: black;
     text-decoration: none;
 }
 

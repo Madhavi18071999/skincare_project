@@ -19,26 +19,27 @@
     <nav class="navbar">
     <div class="nav-dropdown">
       <a href="#" class ="nav-home">
-         Home 
+         Home▾
         <i data-lucide="chevron-down"></i>
       </a>
       <div class="dropdown-menu">
-        <a href="/">Home-1</a>
-        <a href="/home2">Home-2</a>
+        <a href="index.html">Home-1</a>
+        <a href="home-1.html">Home-2</a>
       </div> 
       </div> 
     <a href="/about">About</a>
     <a href="#">Services</a>
     <a href="#">Blog</a>
+    <a href="#">Pricing</a>
     <a href="#">Contact</a>
     <a href="#">Dashboard</a>
   </nav>
   <div class="header-actions">
-     <button class="theme-btn" id="theme-toggle">
-     <i data-lucide="moon">🌙</i>
+      <button class="icon-btn" id="themeBtn">
+        🌙
      </button>
-    <button class="rtl-btn" onclick="toggleRTL()">
-      RTL
+    <button class="icon-btn" id="rtlBtn">
+      ⇄
     </button>
     <button class="primary-btn">
         LogIn
@@ -228,10 +229,28 @@
 
 </footer>
 
-<script src="script.js"></script>
-  <script>
-    lucide.createIcons();
-  </script>
+<script>
+    const themeBtn = document.getElementById("themeBtn");
 
+  themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+    if (document.body.classList.contains("light")) {
+    themeBtn.innerHTML = "☀️";
+  } else {
+    themeBtn.innerHTML = "🌙";
+  }
+});
+  
+  const rtlBtn = document.getElementById("rtlBtn");
+  
+  rtlBtn.addEventListener("click", () => {
+    const html = document.documentElement; 
+    if (html.getAttribute("dir") === "rtl") {
+      html.setAttribute("dir", "ltr");
+    } else {
+      html.setAttribute("dir", "rtl");
+    }
+  });
+</script>
 </body>
 </html>
