@@ -387,7 +387,7 @@ body.dark-mode .header {
 
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
     }
     .about-content h2 {
