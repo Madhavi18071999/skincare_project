@@ -1,0 +1,1044 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* ROOT */
+  :root {
+
+  --primary-color: #355e3b;
+  --secondary-color: #f7f5f0;
+
+  --white: #ffffff;
+  --black: #111111;
+
+  --text-color: #1F2937;
+  --light-text: #6B7280;
+
+  --bg-color: #ffffff;
+  --card-bg: #ffffff;
+
+  --border-color: #E5E7EB;
+}
+
+
+/* BODY */
+
+body{
+
+  font-family:'Inter',sans-serif;
+
+  background:var(--bg-color);
+
+  color:var(--text-color);
+
+  overflow-x:hidden;
+}
+
+/* ===================================================
+   DASHBOARD LAYOUT
+=================================================== */
+
+.dashboard-layout{
+
+  display:grid;
+
+  grid-template-columns:290px 1fr;
+
+  min-height:100vh;
+
+  background:#f7f7f7;
+}
+
+/* ===================================================
+   SIDEBAR
+=================================================== */
+
+.sidebar{
+
+  background:white;
+
+  border-right:1px solid #ececec;
+
+  padding:30px 24px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  position:sticky;
+  top:0;
+
+  height:100vh;
+}
+
+/* LOGO */
+
+.sidebar-logo h2{
+
+  font-size:34px;
+
+  font-family:'Playfair Display',serif;
+
+  margin-bottom:8px;
+}
+
+.sidebar-logo p{
+
+  color: #6B7280;
+
+  font-size:14px;
+}
+
+/* NAV */
+
+.sidebar-nav{
+
+  display:flex;
+  flex-direction:column;
+
+  gap:12px;
+
+  margin-top:40px;
+}
+
+/* LINKS */
+
+.sidebar-nav a{
+
+  display:flex;
+  align-items:center;
+
+  gap:14px;
+
+  padding:16px 18px;
+
+  border-radius:18px;
+
+  text-decoration:none;
+
+  color: #6B7280;
+
+  transition:0.3s ease;
+
+  font-weight:500;
+}
+
+.sidebar-nav a:hover{
+
+  background:white;
+
+  color: var(--primary-color);
+}
+
+/* ACTIVE */
+
+.sidebar-nav a.active{
+
+  background:#355e3b;
+
+  color:white;
+}
+
+/* ICON */
+
+.sidebar-nav a i{
+
+  width:20px;
+  height:20px;
+}
+
+/* PROFILE */
+
+.admin-profile{
+
+  display:flex;
+  align-items:center;
+
+  gap:14px;
+
+  margin-bottom:20px;
+}
+
+.admin-profile img{
+
+  width:54px;
+  height:54px;
+
+  border-radius:18px;
+
+  object-fit:cover;
+}
+
+.admin-profile h4{
+
+  font-size:15px;
+
+  margin-bottom:4px;
+}
+
+.admin-profile span{
+
+  color:#6b7280;
+
+  font-size:13px;
+}
+
+/* LOGOUT */
+
+.logout-btn{
+
+  width:100%;
+
+  height:52px;
+
+  border:none;
+
+  border-radius:18px;
+
+  background:#fee2e2;
+
+  color:#dc2626;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:10px;
+
+  cursor:pointer;
+
+  font-weight:600;
+}
+
+/* ===================================================
+   MAIN
+=================================================== */
+
+.dashboard-main{
+
+  padding:34px;
+}
+
+/* ===================================================
+   TOPBAR
+=================================================== */
+
+.dashboard-topbar{
+
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+
+  gap:24px;
+
+  margin-bottom:28px;
+}
+
+/* BREADCRUMB */
+
+.breadcrumb{
+
+  display:flex;
+  align-items:center;
+
+  gap:10px;
+
+  margin-bottom:18px;
+}
+
+.breadcrumb a{
+
+  text-decoration:none;
+
+  color:#6b7280;
+}
+
+.breadcrumb span{
+
+  color:#111111;
+
+  font-weight:600;
+}
+
+/* WELCOME */
+
+.welcome-text h1{
+
+  font-size:34px;
+
+  margin-bottom:10px;
+}
+
+.welcome-text p{
+
+  color:#6b7280;
+}
+
+/* ACTIONS */
+
+.topbar-actions{
+
+  display:flex;
+  align-items:center;
+
+  gap:14px;
+}
+
+/* SEARCH */
+
+.search-box{
+
+  width:300px;
+  height:56px;
+
+  background:white;
+
+  border:1px solid #ececec;
+
+  border-radius:18px;
+
+  padding:0 18px;
+
+  display:flex;
+  align-items:center;
+
+  gap:12px;
+}
+
+.search-box input{
+
+  width:100%;
+
+  border:none;
+
+  outline:none;
+
+  background:transparent;
+}
+
+/* ICON BTN */
+
+.icon-btn{
+
+  width:56px;
+  height:56px;
+
+  border:none;
+
+  border-radius:18px;
+
+  background:white;
+
+  border:1px solid #ececec;
+
+  position:relative;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+}
+
+/* BADGE */
+
+.badge{
+
+  position:absolute;
+
+  top:10px;
+  right:10px;
+
+  width:18px;
+  height:18px;
+
+  border-radius:50%;
+
+  background:#355e3b;
+
+  color:white;
+
+  font-size:10px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* ===================================================
+   STATS
+=================================================== */
+
+.stats-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:22px;
+
+  margin-bottom:22px;
+}
+
+/* CARD */
+
+.stats-card{
+
+  background:white;
+
+  border:1px solid #ececec;
+
+  border-radius:28px;
+
+  padding:28px;
+}
+
+.stats-icon{
+
+  width:70px;
+  height:70px;
+
+  border-radius:22px;
+
+  background:#f8f3ef;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:24px;
+}
+
+.stats-icon i{
+
+  color:#355e3b;
+}
+
+.stats-card h2{
+
+  font-size:34px;
+
+  margin-bottom:12px;
+}
+
+.stats-card h3{
+
+  margin-bottom:10px;
+}
+
+.stats-card p{
+
+  color:#6b7280;
+
+  line-height:1.7;
+}
+
+/* ===================================================
+   GRID
+=================================================== */
+
+.dashboard-grid{
+
+  display:grid;
+
+  grid-template-columns:1.3fr 0.7fr;
+
+  gap:22px;
+}
+
+/* LEFT RIGHT */
+
+.dashboard-left,
+.dashboard-right{
+
+  display:flex;
+  flex-direction:column;
+
+  gap:22px;
+}
+
+/* ===================================================
+   DASHBOARD CARD
+=================================================== */
+
+.dashboard-card{
+
+  background:white;
+
+  border:1px solid #ececec;
+
+  border-radius:28px;
+
+  padding:28px;
+}
+
+/* HEADER */
+
+.card-header{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  margin-bottom:24px;
+}
+
+.card-header h2{
+
+  margin-bottom:8px;
+}
+
+.card-header p{
+
+  color:#6b7280;
+}
+
+/* BUTTON */
+
+.primary-btn{
+
+  padding:14px 22px;
+
+  border:none;
+
+  border-radius:16px;
+
+  background:#355e3b;
+
+  color:white;
+
+  cursor:pointer;
+}
+
+/* ===================================================
+   CHART
+=================================================== */
+
+.chart-placeholder{
+
+  height:320px;
+
+  border-radius:28px;
+
+  background:linear-gradient(
+    180deg,
+    #faf6f2,
+    #ffffff
+  );
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.chart-line{
+
+  position:absolute;
+
+  bottom:50px;
+  left:40px;
+
+  width:80%;
+  height:140px;
+
+  border-radius:200px;
+
+  border:5px solid #355e3b;
+
+  border-color:#355e3b transparent transparent transparent;
+
+  transform:rotate(-5deg);
+}
+
+/* ===================================================
+   TABLE
+=================================================== */
+
+.orders-table{
+
+  width:100%;
+
+  border-collapse:collapse;
+}
+
+.orders-table th{
+
+  padding:18px;
+
+  text-align:left;
+
+  color:#6b7280;
+
+  background:#fafafa;
+}
+
+.orders-table td{
+
+  padding:20px 18px;
+
+  border-top:1px solid #f3f3f3;
+}
+
+/* STATUS */
+
+.status{
+
+  padding:8px 14px;
+
+  border-radius:999px;
+
+  font-size:12px;
+
+  font-weight:600;
+}
+
+.completed{
+
+  background:var(--secondary-color);
+
+  color:#355e3b;
+}
+
+.pending{
+
+  background: var(--secondary-color);
+
+  color:#355e3b;
+}
+
+.cancelled{
+
+  background:var(--secondary-color);
+
+  color:#355e3b;
+}
+
+/* ===================================================
+   TASKS
+=================================================== */
+
+.task-item{
+
+  display:flex;
+  align-items:center;
+
+  gap:14px;
+
+  padding:14px 0;
+}
+
+/* ===================================================
+   ACTIVITY
+=================================================== */
+
+.activity-item{
+
+  display:flex;
+
+  gap:14px;
+
+  padding:18px 0;
+
+  border-bottom:1px solid #f3f3f3;
+}
+
+.activity-item:last-child{
+
+  border:none;
+}
+
+.activity-dot{
+
+  width:10px;
+  height:10px;
+
+  border-radius:50%;
+
+  background:#355e3b;
+
+  margin-top:8px;
+}
+
+/* ===================================================
+   DARK MODE
+=================================================== */
+
+body.dark-mode{
+
+  --bg-color:#111111;
+
+  --card-bg:#1A1A1A;
+
+  --text-color:#F5F5F5;
+
+  --light-text:#A1A1AA;
+
+  --border-color:#2A2A2A;
+
+  background:var(--bg-color);
+
+  color:var(--text-color);
+}
+
+/* ===================================================
+   SIDEBAR
+=================================================== */
+
+body.dark-mode .sidebar{
+
+  background:#161616;
+
+  border-color:var(--border-color);
+}
+
+/* LOGO */
+
+body.dark-mode .sidebar-logo h2{
+
+  color:white;
+}
+
+body.dark-mode .sidebar-logo p{
+
+  color:var(--light-text);
+}
+
+/* NAVIGATION */
+
+body.dark-mode .sidebar-nav a{
+
+  color:var(--light-text);
+}
+
+body.dark-mode .sidebar-nav a:hover{
+
+  background:#1f1f1f;
+
+  color:white;
+}
+
+/* ACTIVE */
+
+body.dark-mode .sidebar-nav a.active{
+
+  background:var(--primary-color);
+
+  color:white;
+}
+
+/* ===================================================
+   TOPBAR
+=================================================== */
+
+body.dark-mode .breadcrumb a{
+
+  color:var(--light-text);
+}
+
+body.dark-mode .breadcrumb span{
+
+  color:white;
+}
+
+body.dark-mode .welcome-text h1{
+
+  color:white;
+}
+
+body.dark-mode .welcome-text p{
+
+  color:var(--light-text);
+}
+
+/* ===================================================
+   SEARCH
+=================================================== */
+
+body.dark-mode .search-box{
+
+  background:#1A1A1A;
+
+  border-color:var(--border-color);
+}
+
+body.dark-mode .search-box input{
+
+  color:white;
+}
+
+body.dark-mode .search-box i{
+
+  color:var(--light-text);
+}
+
+/* ===================================================
+   BUTTONS
+=================================================== */
+
+body.dark-mode .icon-btn{
+
+  background:#1A1A1A;
+
+  border-color:var(--border-color);
+
+  color:white;
+}
+
+body.dark-mode .primary-btn{
+
+  color:white;
+}
+
+/* ===================================================
+   CARDS
+=================================================== */
+
+body.dark-mode .stats-card,
+body.dark-mode .dashboard-card{
+
+  background:#1A1A1A;
+
+  border-color:var(--border-color);
+}
+
+/* TEXT */
+
+body.dark-mode .stats-card h2,
+body.dark-mode .stats-card h3,
+body.dark-mode .card-header h2,
+body.dark-mode .task-item span,
+body.dark-mode .activity-item h4{
+
+  color:white;
+}
+
+body.dark-mode .stats-card p,
+body.dark-mode .card-header p,
+body.dark-mode .activity-item p{
+
+  color:var(--light-text);
+}
+
+/* ===================================================
+   ICON BOXES
+=================================================== */
+
+body.dark-mode .stats-icon{
+
+  background:#232323;
+}
+
+/* ===================================================
+   CHART
+=================================================== */
+
+body.dark-mode .chart-placeholder{
+
+  background:linear-gradient(
+    180deg,
+    #1f1f1f,
+    #151515
+  );
+}
+
+/* ===================================================
+   TABLE
+=================================================== */
+
+body.dark-mode .orders-table th{
+
+  background:#202020;
+
+  color:#d1d5db;
+}
+
+body.dark-mode .orders-table td{
+
+  border-color:#2A2A2A;
+
+  color:#f5f5f5;
+}
+
+/* ROW HOVER */
+
+body.dark-mode .orders-table tbody tr:hover{
+
+  background:#1f1f1f;
+}
+
+/* ===================================================
+   TASKS
+=================================================== */
+
+body.dark-mode input[type="checkbox"]{
+
+  accent-color:var(--primary-color);
+}
+
+/* ===================================================
+   PROFILE
+=================================================== */
+
+body.dark-mode .admin-profile h4{
+
+  color:white;
+}
+
+body.dark-mode .admin-profile span{
+
+  color:var(--light-text);
+}
+
+/* ===================================================
+   LOGOUT
+=================================================== */
+
+body.dark-mode .logout-btn{
+
+  background:#2a1b1b;
+
+  color:#ffb4b4;
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media(max-width:1200px){
+
+  .stats-grid{
+
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .dashboard-grid{
+
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:992px){
+
+  .dashboard-layout{
+
+    grid-template-columns:1fr;
+  }
+
+  .sidebar{
+
+    display:none;
+  }
+}
+
+@media(max-width:768px){
+
+  .dashboard-main{
+
+    padding:18px;
+  }
+
+  .dashboard-topbar{
+
+    flex-direction:column;
+  }
+
+  .stats-grid{
+
+    grid-template-columns:1fr;
+  }
+
+  .topbar-actions{
+
+    width:100%;
+
+    flex-wrap:wrap;
+  }
+
+  .search-box{
+
+    width:100%;
+  }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+  .journey-grid,
+  .values-grid,
+  .team-grid{
+
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:992px){
+
+  .navbar{
+    display:none;
+  }
+
+  .about-company{
+
+    grid-template-columns:1fr;
+  }
+
+  .hero-content h1{
+
+    font-size:56px;
+  }
+
+  .section-title h2,
+  .about-left h2{
+
+    font-size:42px;
+  }
+
+  .footer-grid{
+
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:768px){
+
+  section{
+
+    padding:70px 5%;
+  }
+
+  .header{
+
+    padding:20px 5%;
+  }
+
+  .journey-grid,
+  .values-grid,
+  .team-grid,
+  .footer-grid{
+
+    grid-template-columns:1fr;
+  }
+
+  .hero-content h1{
+
+    font-size:42px;
+  }
+
+  .about-right img{
+
+    height:450px;
+  }
+
+  .cta-box{
+
+    padding:60px 30px;
+  }
+
+  .cta-buttons{
+
+    flex-direction:column;
+  }
+}

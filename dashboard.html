@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic Skin Care & Soap Crafters</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+<div class="dashboard-layout">
+
+  <!-- ===================================================
+       SIDEBAR
+  =================================================== -->
+
+  <aside class="sidebar">
+
+    <!-- LOGO -->
+
+    <div class="sidebar-logo">
+
+      <h2>Organic Skin Care</h2>
+
+      <p>
+         Natural Skincare Dashboard
+      </p>
+
+    </div>
+
+    <!-- NAVIGATION -->
+
+    <nav class="sidebar-nav">
+
+      <a href="#" class="active">
+
+        <i data-lucide="layout-dashboard"></i>
+
+        <span>Dashboard</span>
+
+      </a>
+
+      <a href="#">
+
+        <i data-lucide="bar-chart-3"></i>
+
+        <span>Analytics</span>
+
+      </a>
+
+      <a href="#">
+
+        <i data-lucide="briefcase-business"></i>
+
+        <span>Projects</span>
+
+      </a>
+
+      <a href="#">
+
+        <i data-lucide="shopping-bag"></i>
+
+        <span>Orders</span>
+
+      </a>
+
+      <a href="#">
+
+        <i data-lucide="users"></i>
+
+        <span>Customers</span>
+
+      </a>
+
+      <a href="#">
+
+        <i data-lucide="package"></i>
+
+        <span>Products</span>
+
+      </a>
+
+      <a href="#">
+
+        <i data-lucide="message-circle"></i>
+
+        <span>Messages</span>
+
+      </a>
+
+      <a href="#">
+
+        <i data-lucide="calendar-days"></i>
+
+        <span>Schedule</span>
+
+      </a>
+
+      <a href="#">
+
+        <i data-lucide="settings"></i>
+
+        <span>Settings</span>
+
+      </a>
+
+    </nav>
+
+    <!-- SIDEBAR BOTTOM -->
+
+    <div class="sidebar-bottom">
+
+      <div class="admin-profile">
+
+        <img 
+          src="https://i.pravatar.cc/120" 
+          alt="admin"
+        >
+
+        <div>
+
+          <h4>Alex Carter</h4>
+
+          <span>Creative Director</span>
+
+        </div>
+
+      </div>
+
+      <button class="logout-btn">
+
+        <i data-lucide="log-out"></i>
+
+        Logout
+
+      </button>
+
+    </div>
+
+  </aside>
+
+  <!-- ===================================================
+       MAIN CONTENT
+  =================================================== -->
+
+  <main class="dashboard-main">
+
+    <!-- ===================================================
+         TOPBAR
+    =================================================== -->
+
+    <header class="dashboard-topbar">
+
+      <!-- LEFT -->
+
+      <div>
+
+        <!-- BREADCRUMB -->
+
+        <div class="breadcrumb">
+
+          <a href='/'>
+            Home
+          </a>
+
+          <i data-lucide="chevron-right"></i>
+
+          <span>
+            Dashboard
+          </span>
+
+        </div>
+
+        <!-- TITLE -->
+
+        <div class="welcome-text">
+
+          <h1>
+            Good Morning, Siri 👋
+          </h1>
+
+          <p>
+            Here’s the latest overview of Organic Skin Care and Soap Crafters.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="topbar-actions">
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+          <i data-lucide="search"></i>
+
+          <input 
+            type="text" 
+            placeholder="Search anything..."
+          >
+
+        </div>
+
+        <!-- ICONS -->
+
+        <button class="icon-btn">
+
+          <i data-lucide="bell"></i>
+
+          <span class="badge">4</span>
+
+        </button>
+
+        <button class="icon-btn">
+
+          <i data-lucide="message-square"></i>
+
+        </button>
+
+        <button class="icon-btn" id="theme-toggle">
+
+  <i data-lucide="moon"></i>
+
+</button>
+
+      </div>
+
+    </header>
+
+    <!-- ===================================================
+         STATS
+    =================================================== -->
+
+    <section class="stats-grid">
+
+      <div class="stats-card">
+
+        <div class="stats-icon">
+
+          <i data-lucide="wallet"></i>
+
+        </div>
+
+        <h2>$60, 486</h2>
+
+        <h3>Total Revenue</h3>
+
+        <p>
+          +18% growth from last month 🚀
+        </p>
+
+      </div>
+
+      <div class="stats-card">
+
+        <div class="stats-icon">
+
+          <i data-lucide="shopping-cart"></i>
+
+        </div>
+
+        <h2>1,248</h2>
+
+        <h3>Orders</h3>
+
+        <p>
+          126 new soap orders received.
+        </p>
+
+      </div>
+
+      <div class="stats-card">
+
+        <div class="stats-icon">
+
+          <i data-lucide="users"></i>
+
+        </div>
+
+        <h2>842</h2>
+
+        <h3>Customers</h3>
+
+        <p>
+          Client engagement is highly active.
+        </p>
+
+      </div>
+
+      <div class="stats-card">
+
+        <div class="stats-icon">
+
+          <i data-lucide="star"></i>
+
+        </div>
+
+        <h2>4.9</h2>
+
+        <h3>Client Rating</h3>
+
+        <p>
+          Premium satisfaction maintained ✨
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ===================================================
+         MAIN GRID
+    =================================================== -->
+
+    <section class="dashboard-grid">
+
+      <!-- LEFT -->
+
+      <div class="dashboard-left">
+
+        <!-- REVENUE -->
+
+        <div class="dashboard-card large-card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h2>Revenue Analytics</h2>
+
+              <p>
+                Your business performance is growing steadily.
+              </p>
+
+            </div>
+
+            <button class="primary-btn">
+              Download Report
+            </button>
+
+          </div>
+
+          <div class="chart-placeholder">
+
+            <div class="chart-line"></div>
+
+          </div>
+
+        </div>
+
+        <!-- RECENT ORDERS -->
+
+        <div class="dashboard-card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h2>Recent Orders</h2>
+
+              <p>
+                Latest luxury pack purchases.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="table-wrapper">
+
+            <table class="orders-table">
+
+              <thead>
+
+                <tr>
+
+                  <th>Customer</th>
+                  <th>Product</th>
+                  <th>Status</th>
+                  <th>Amount</th>
+
+                </tr>
+
+              </thead>
+
+              <tbody>
+
+                <tr>
+
+                  <td>skin care</td>
+                  <td>Luxury pack</td>
+                  <td>
+                    <span class="status completed">
+                      Completed
+                    </span>
+                  </td>
+                  <td>$1,280</td>
+
+                </tr>
+
+                <tr>
+
+                  <td>Natural Skincare</td>
+                  <td>Premium Package</td>
+                  <td>
+                    <span class="status pending">
+                      Pending
+                    </span>
+                  </td>
+                  <td>$820</td>
+
+                </tr>
+
+                <tr>
+
+                  <td>Glow Skin Care</td>
+                  <td>Basic Pack</td>
+                  <td>
+                    <span class="status cancelled">
+                      Cancelled
+                    </span>
+                  </td>
+                  <td>$430</td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="dashboard-right">
+
+        <!-- TASKS -->
+
+        <div class="dashboard-card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h2>Tasks</h2>
+
+              <p>
+                3 tasks require attention.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="task-item">
+
+            <input type="checkbox">
+
+            <span>
+              Finalize Skin Care concept
+            </span>
+
+          </div>
+
+          <div class="task-item">
+
+            <input type="checkbox" checked>
+
+            <span>
+              Client meeting completed
+            </span>
+
+          </div>
+
+          <div class="task-item">
+
+            <input type="checkbox">
+
+            <span>
+              Upload new product collection
+            </span>
+
+          </div>
+
+        </div>
+
+        <!-- TEAM ACTIVITY -->
+
+        <div class="dashboard-card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h2>Team Activity</h2>
+
+              <p>
+                Latest updates from your team.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="activity-item">
+
+            <div class="activity-dot"></div>
+
+            <div>
+
+              <h4>
+                Design review scheduled
+              </h4>
+
+              <p>
+                Meeting at 3:00 PM today.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="activity-item">
+
+            <div class="activity-dot"></div>
+
+            <div>
+
+              <h4>
+                New client inquiry received
+              </h4>
+
+              <p>
+                Premium Skin Care consultation booked.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    </main>
+</div>
+<!-- LUCIDE -->
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- MAIN JS -->
+
+<script src="main.js"></script>
+
+<!-- INIT ICONS -->
+
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>
