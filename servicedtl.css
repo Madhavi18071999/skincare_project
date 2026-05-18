@@ -271,10 +271,6 @@ body.dark-mode .header {
   padding: 100px 10%;
   background: #f7f5f0;
   gap: 50px;
-  background-image: url(images/skincare.jpg);
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
 }
 
 .hero-content {

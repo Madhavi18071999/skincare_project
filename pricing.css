@@ -263,11 +263,6 @@ body.dark-mode .header {
       transform:translateY(-2px);
     }
 
-    :root {
-  --green: #355e3b;
-  --cream: #f7f5f0;
-  --white: #ffffff;
-}
 
 /* HERO SECTION */
 .pricing-hero {
