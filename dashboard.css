@@ -1,3 +1,6 @@
+
+/* RESET */
+
 *{
   margin:0;
   padding:0;
@@ -5,23 +8,20 @@
 }
 
 /* ROOT */
-  :root {
 
-  --primary-color: #355e3b;
-  --secondary-color: #f7f5f0;
+:root{
 
-  --white: #ffffff;
-  --black: #111111;
+  --primary-color:#355e3b;
+  --secondary-color:#f7f5f0;
 
-  --text-color: #1F2937;
-  --light-text: #6B7280;
+  --bg-color:#ffffff;
+  --card-bg:#ffffff;
 
-  --bg-color: #ffffff;
-  --card-bg: #ffffff;
+  --text-color:#111111;
+  --light-text:#6B7280;
 
-  --border-color: #E5E7EB;
+  --border-color:#E5E7EB;
 }
-
 
 /* BODY */
 
@@ -86,7 +86,7 @@ body{
 
 .sidebar-logo p{
 
-  color: #6B7280;
+  color:#6b7280;
 
   font-size:14px;
 }
@@ -118,7 +118,7 @@ body{
 
   text-decoration:none;
 
-  color: #6B7280;
+  color:#6b7280;
 
   transition:0.3s ease;
 
@@ -127,9 +127,9 @@ body{
 
 .sidebar-nav a:hover{
 
-  background:white;
+  background:#f8f3ef;
 
-  color: var(--primary-color);
+  color:#355e3b;
 }
 
 /* ACTIVE */
@@ -552,6 +552,7 @@ body{
   transform:rotate(-5deg);
 }
 
+
 /* ===================================================
    TABLE
 =================================================== */
@@ -596,23 +597,23 @@ body{
 
 .completed{
 
-  background:var(--secondary-color);
+  background:#dcfce7;
 
-  color:#355e3b;
+  color:#16a34a;
 }
 
 .pending{
 
-  background: var(--secondary-color);
+  background:#fef3c7;
 
-  color:#355e3b;
+  color:#ca8a04;
 }
 
 .cancelled{
 
-  background:var(--secondary-color);
+  background:#fee2e2;
 
-  color:#355e3b;
+  color:#dc2626;
 }
 
 /* ===================================================

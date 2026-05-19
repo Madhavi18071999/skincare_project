@@ -115,11 +115,11 @@ body.dark-mode .header {
 }
 
 .navbar a {
+  color:var(--muted);
+  font-size:15px;
+  font-weight:500;
+  transition:.25s ease;
   text-decoration: none;
-  color: var(--text-color);
-  font-size: 15px;
-  font-weight: 500;
-  transition: 0.3s ease;
 }
 
 .navbar a:hover {
@@ -229,6 +229,7 @@ body.dark-mode .header {
       transform:translateY(-2px);
       background:var(--secondary);
     }
+
 
     .btn{
       height:44px;

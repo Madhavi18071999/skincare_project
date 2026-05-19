@@ -583,11 +583,11 @@ body.dark-mode .header {
 =================================================== */
 
 .blog-sidebar{
-
-  display:flex;
-  flex-direction:column;
-
-  gap:28px;
+  flex: 1;
+  position: sticky;
+  top: 30px;
+  align-self: flex-start;
+  height: fit-content;
 }
 
 /* CARD */
