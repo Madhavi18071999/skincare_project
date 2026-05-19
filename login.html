@@ -1,277 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Skin Care</title>
+    <link rel="stylesheet" href="login.css">
+ 
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+  
+ 
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
 
-<title>Login - Organic Skin Care</title>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-<style>
-
-/* ================= RESET ================= */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial, sans-serif;
-}
-
-/* ================= THEME ================= */
-:root{
-  --bg:#fff;
-  --text:#111;
-  --card:#ffffff;
-  --primary:#355e3b;
-}
-
-body.dark{
-  --bg:#121212;
-  --text:#fff;
-  --card:#1e1e1e;
-}
-
-body{
-  background:var(--bg);
-  color:var(--text);
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  transition:0.4s;
-}
-
-/* ================= TOP ICONS ================= */
-.top-controls{
-  position:absolute;
-  top:20px;
-  right:25px;
-  display:flex;
-  gap:12px;
-}
-
-.top-controls i{
-  font-size:22px;
-  cursor:pointer;
-  color:var(--primary);
-  transition:0.3s;
-}
-
-.top-controls i:hover{
-  transform:scale(1.2);
-}
-
-/* ================= CARD ================= */
-.login-card{
-  width:380px;
-  background:var(--card);
-  padding:30px;
-  border-radius:15px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.15);
-  position:relative;
-}
-
-/* LOGO */
-.logo{
-  font-size:20px;
-  font-weight:bold;
-  text-align: center;
-  display: inline-block;
-  color:var(--primary);
-  margin-bottom:20px;
-  margin-left:80px;
-}
-
-/* TITLE */
-.title{
-  text-align:center;
-  margin-bottom:20px;
-  font-size:22px;
-}
-
-/* INPUTS */
-.field{
-  margin-bottom:15px;
-  position:relative;
-}
-
-.field input{
-  width:100%;
-  padding:12px 40px 12px 12px;
-  border-radius:8px;
-  border:1px solid #ddd;
-  outline:none;
-}
-
-/* PASSWORD ICON */
-.eye{
-  position:absolute;
-  right:12px;
-  top:50%;
-  transform:translateY(-50%);
-  cursor:pointer;
-  color:#777;
-}
-
-/* REMEMBER + FORGOT */
-.options{
-  display:flex;
-  justify-content:space-between;
-  font-size:14px;
-  margin-bottom:15px;
-}
-
-.options a{
-  color:var(--primary);
-  text-decoration:none;
-}
-
-/* BUTTON */
-.login-btn{
-  width:100%;
-  padding:12px;
-  background:var(--primary);
-  border:none;
-  color:#fff;
-  font-weight:bold;
-  border-radius:8px;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.login-btn:hover{
-  background:#355e3b;
-}
-
-/* SOCIAL */
-.social-title{
-  text-align:center;
-  margin:15px 0 10px;
-  font-size:14px;
-  opacity:0.7;
-}
-
-.social{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-.social button{
-  width:100%;
-  padding:10px;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  font-weight:600;
-}
-
-.google{background:#fff;color:#000;border:1px solid #ddd;}
-.apple{background:#000;color:#fff;}
-.facebook{background:black;color:#fff;}
-
-/* SIGNUP */
-.signup{
-  text-align:center;
-  margin-top:15px;
-  font-size:14px;
-}
-
-.signup a{
-  color:var(--primary);
-  text-decoration:none;
-}
-
-</style>
+ 
+  <link rel="stylesheet" href="login.css">
+ 
 </head>
-
+ 
 <body>
+ 
+<section class="login-section">
+ 
+  <div class="login-box">
 
-<!-- TOP CONTROLS -->
-<div class="top-controls">
-  <i class="bi bi-moon-stars" onclick="toggleTheme()"></i>
-  <i class="bi bi-arrow-left-right" onclick="toggleRTL()"></i>
-</div>
+ 
+    <div class="theme-wrapper">
+ 
+    
+ 
+      <button class="theme-toggle" id="themeToggle">
+ 
+        <i class="fa-solid fa-moon"></i>
+ 
+        <span></span>
+ 
+      </button>
+ 
+      
+ 
+      <button class="rtl-toggle" id="rtlToggle">
+ 
+        RTL
+ 
+      </button>
+ 
+    </div>
+ 
 
-<!-- LOGIN CARD -->
-<div class="login-card">
+ 
+    <div class="logo" onclick="document.location='index.html'">
+ 
+      <a href="#home" class="logo" onclick="document.location='index.html'">Organic Skin Care</a>
+     
+ 
+    </div>
 
-<a class='logo' href='/'>Organic Skin Care</a>
+  
+    <h1>Welcome Back</h1>
+ 
+    <p class="subtitle">
+      Login to continue your skin care.
+    </p>
+ 
+  
+ 
+    <form>
+ 
+      
+ 
+      <div class="input-group">
+ 
+        <label>Email Address</label>
+ 
+        <div class="input-box">
+ 
+          <input type="email" placeholder="Enter your email">
+ 
+        </div>
+ 
+      </div>
+ 
+      
+ 
+      <div class="input-group">
+ 
+        <label>Password</label>
+ 
+        <div class="input-box">
+ 
+          <input type="password" placeholder="Enter your password">
+ 
+        </div>
+ 
+      </div>
+ 
+      
+ 
+      <div class="options">
+ 
+        <div class="remember">
+ 
+          <input type="checkbox">
+ 
+          <span>Remember Me</span>
+ 
+        </div>
+ 
+        <a href='/forgot'>Forgot Password?</a>
+ 
+      </div>
+ 
+      
+ 
+      <button class="login-btn">
+ 
+        Login Account
+ 
+      </button>
+ 
+    </form>
+ 
 
-  <div class="title">Login to your account</div>
+ 
+    <div class="divider">
+ 
+      <span>OR CONTINUE WITH</span>
+ 
+    </div>
+ 
 
-  <div class="field">
-    <input type="email" placeholder="Email">
+ 
+    <div class="social-buttons">
+ 
+      <button class="social-btn">
+        Google
+      </button>
+ 
+      <button class="social-btn">
+        Apple
+      </button>
+ 
+    </div>
+ 
+ 
+    <p class="signup-text">
+ 
+      Don't have an account?
+ 
+      
+      <a href="#" onclick="document.location='signup.html'">Create Account</a>
+ 
+ 
+    </p>
+ 
   </div>
+ 
+</section>
 
-  <div class="field">
-    <input type="password" id="password" placeholder="Password">
-    <i class="bi bi-eye eye" onclick="togglePassword()"></i>
-  </div>
-
-  <div class="options">
-    <label><input type="checkbox"> Remember Me</label>
-    <a href="#">Forgot Password?</a>
-  </div>
-
-  <button class="login-btn" onclick="login()">Login</button>
-
-  <div class="social-title">Or continue with</div>
-
-  <div class="social">
-    <button class="google"><i class="bi bi-google"></i> Google</button>
-    <button class="apple"><i class="bi bi-apple"></i> Apple</button>
-    <button class="facebook"><i class="bi bi-facebook"></i> Facebook</button>
-  </div>
-
-  <div class="signup">
-    New user? <a href='/signup'>Create account</a>
-  </div>
-
-</div>
-
-<script>
-
-/* LOGIN */
-function login(){
-  const email = document.querySelector("input[type='email']").value;
-  const password = document.getElementById("password").value;
-
-  if(email=="" || password==""){
-    alert("Fill all fields");
-    return;
-  }
-
-  if(email==="admin@gmail.com" && password==="1234"){
-    alert("Login Success");
-    window.location.href="dashboard.html";
-  }else{
-    alert("Invalid credentials");
-  }
-}
-
-/* PASSWORD TOGGLE */
-function togglePassword(){
-  const pass = document.getElementById("password");
-  pass.type = pass.type === "password" ? "text" : "password";
-}
-
-/* DARK MODE */
-function toggleTheme(){
-  document.body.classList.toggle("dark");
-}
-
-/* RTL */
-function toggleRTL(){
-  document.body.dir = document.body.dir === "rtl" ? "ltr" : "rtl";
-}
-
-</script>
-
+ 
+<script src="login.js"></script>
+ 
 </body>
+ 
 </html>
+ 

@@ -250,14 +250,20 @@ body.dark-mode .header {
       border:1px solid var(--border);
     }
 
-    .btn-primary{
-      background:var(--primary);
-      color:white;
-    }
+    .primary-btn{
+    display: inline-block;
+    background: #355e3b;   /* or your theme color */
+    color: #ffffff;        /* WHITE TEXT */
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none; /* removes underline */
+    font-weight: 600;
+    transition: 0.3s ease;
+}
 
-    .btn-primary:hover{
-      background:var(--primary-hover);
-    }
+.primary-btn:hover{
+    background: #2b4d31;
+}
 
     .btn:hover{
       transform:translateY(-2px);

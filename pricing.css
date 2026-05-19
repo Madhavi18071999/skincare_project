@@ -188,17 +188,20 @@ body.dark-mode .header {
   transition: var(--transition);
 }
 
-.primary-btn {
-  background: var(--primary-color);
-  color: white;
-  border: none;
+.primary-btn{
+    display: inline-block;
+    background: #355e3b;   /* or your theme color */
+    color: #ffffff;        /* WHITE TEXT */
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none; /* removes underline */
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
-.primary-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px var(--primary-color);
+.primary-btn:hover{
+    background: #2b4d31;
 }
-
 .secondary-btn {
   background: transparent;
   border: 1px solid var(--border-color);
