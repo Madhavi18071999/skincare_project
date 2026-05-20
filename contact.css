@@ -25,9 +25,16 @@
 
 
 body.dark-mode {
-  background: #101010;
-  color: #f5f5dc;
+
+  --bg-color: #111111;
+  --card-bg: #1B1B1B;
+
+  --text-color: #ffffff;
+  --light-text: #B3B3B3;
+
+  --border-color: #2A2A2A;
 }
+
 
 body.rtl-mode {
   direction: rtl;

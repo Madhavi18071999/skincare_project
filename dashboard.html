@@ -587,22 +587,32 @@
 
 </div>
 
-
-<!-- LUCIDE -->
-
-<script src="https://unpkg.com/lucide@latest"></script>
-
-<!-- MAIN JS -->
-
-<script src="main.js"></script>
-
-<!-- INIT ICONS -->
-
 <script>
-  lucide.createIcons();
-</script>
+   const themeBtn = document.getElementById("themeBtn");
 
-</body>
+themeBtn.addEventListener("click", () => {
+
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+      themeBtn.innerHTML = "☀️";
+  } else {
+      themeBtn.innerHTML = "🌙";
+  }
+
+});
+  
+  const rtlBtn = document.getElementById("rtlBtn");
+  
+  rtlBtn.addEventListener("click", () => {
+    const html = document.documentElement; 
+    if (html.getAttribute("dir") === "rtl") {
+      html.setAttribute("dir", "ltr");
+    } else {
+      html.setAttribute("dir", "rtl");
+    }
+  });
+</script>
 
 </body>
 </html>
