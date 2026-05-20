@@ -23,15 +23,28 @@
   --transition: 0.3s ease;
 }
 
-
 body.dark-mode {
-  background: #101010;
-  color: #f5f5dc;
+
+  --bg-color: #111111;
+  --card-bg: #1B1B1B;
+
+  --text-color: #ffffff;
+  --light-text: #B3B3B3;
+
+  --border-color: #2A2A2A;
 }
 
 body.rtl-mode {
   direction: rtl;
 }
+
+*{
+  transition:
+  background 0.3s ease,
+  color 0.3s ease,
+  border-color 0.3s ease;
+}
+
 
 body {
   font-family: 'Inter', sans-serif;
@@ -93,6 +106,7 @@ section {
 body.dark-mode .header {
   background: rgba(17,17,17,0.9);
 }
+
 
 .logo h2 {
   font-family: 'Playfair Display', serif;
@@ -351,8 +365,9 @@ body.dark-mode .header {
     }
 
     .header-actions{
-        flex-wrap: wrap;
-        justify-content: center;
+      display:flex;
+      align-items:center;
+      gap:12px;
     }
 
     .hero{
